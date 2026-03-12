@@ -1,0 +1,26 @@
+/* 
+==UserStyle==
+@name           Ecosia AI Search Blocker
+@namespace      https://github.com/DragoBot419/Ecosia-AI-Search-Block
+@version        1.0.0
+@description    Basic userstyle blocking the AI Search buttons on Ecosia
+@author         DragoBot
+==/UserStyle== 
+
+Note: Developed & tested for use with Stylus, I have no idea if it'll work anywhere else but feel free to try :)
+*/
+
+@-moz-document domain("ecosia.org") {
+    
+    [data-test-id="search-navigation-item-ai_search"] {
+        display:none !important;
+    }
+    
+    [data-test-id="search-form-ai-suggestion"] {
+        display:none !important;
+    }
+    
+    .search-navigation__divider {
+        display: none !important;
+    }
+}
